@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/Event_input">
+    <item android:state_enabled="true" android:state_focused="true">
+        <shape
+            android:layout_width="match_parent"
+            android:shape="oval">
+            <solid android:color="@color/Background" />
+            <corners android:radius="@dimen/_20sdp" />
+            <stroke
+                android:width="@dimen/_2sdp"
+                android:color="@color/Event_input" />
+        </shape>
+    </item>
+    <item android:state_enabled="true" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/Background"/>
+            <corners android:radius="20dp"/>
+            <stroke android:color="@color/Start_input" android:width="@dimen/_2sdp"/>
+        </shape>
+    </item>
+</ripple>

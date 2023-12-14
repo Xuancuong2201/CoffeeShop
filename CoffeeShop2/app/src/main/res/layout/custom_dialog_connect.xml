@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="15dp"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/Img_Result"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/internet_fail" />
+    <TextView
+        android:id="@+id/Txt_Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ki_m_tra_k_t_n_i_m_ng"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đóng"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:background="@color/Event_input"/>
+
+
+
+</LinearLayout>

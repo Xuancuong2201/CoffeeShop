@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="@dimen/_220sdp"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_10sdp">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/roundedImageView"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/bg_br"
+        app:layout_constraintBottom_toBottomOf="@+id/Date_warehouse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="10dp" />
+    <TextView
+        android:id="@+id/ID_warehouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="@string/id"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/roundedImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_9sdp"/>
+
+    <EditText
+        android:id="@+id/Name_warehouse"
+        android:layout_width="140dp"
+        android:layout_height="@dimen/_40sdp"
+        android:autofillHints="name"
+        android:hint="@string/name"
+        android:fontFamily="@font/alfa_slab_one"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Depot_warehouse"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:hint="@string/quality"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Type_warehouse"
+        app:layout_constraintTop_toBottomOf="@+id/Name_warehouse" />
+
+    <EditText
+        android:id="@+id/Type_warehouse"
+        android:layout_width="70dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:inputType="text"
+        android:hint="@string/type"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/roundedImageView"
+        app:layout_constraintTop_toBottomOf="@+id/Name_warehouse" />
+
+    <EditText
+        android:id="@+id/Date_warehouse"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:inputType="date"
+        android:hint="@string/date"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/roundedImageView"
+        app:layout_constraintTop_toBottomOf="@+id/Type_warehouse"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Btn_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Event_input"
+        android:text="@string/add"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Date_warehouse"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Event_input"
+        android:text="@string/cancel"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toEndOf="@+id/Btn_Save"
+        app:layout_constraintTop_toBottomOf="@+id/Date_warehouse"
+        android:layout_marginTop="@dimen/_10sdp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

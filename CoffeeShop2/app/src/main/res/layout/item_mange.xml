@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/Img_name"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/bg_br"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="10dp" />
+
+        <TextView
+            android:id="@+id/ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/id"
+            android:textColor="@color/Event_input"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/Img_name"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/alfa_slab_one"/>
+
+        <TextView
+            android:id="@+id/Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Coffee"
+            android:textColor="@color/Event_input"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/Img_name"
+            app:layout_constraintTop_toBottomOf="@+id/ID"
+            android:layout_marginTop="@dimen/_5sdp"/>
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="105dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Americano"
+            android:textColor="@color/Event_input"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ID"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Img_name">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng kho: "
+                android:fontFamily="@font/alfa_slab_one"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/Depot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/Event_input"
+                android:fontFamily="@font/alfa_slab_one"
+                android:layout_marginStart="2dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Đã dùng: "
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/Used"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="9"
+                android:textColor="@color/Event_input" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="130dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:fontFamily="@font/alfa_slab_one"
+            android:inputType="date"
+            android:text="29/10/2002"
+            android:textColor="@color/Event_input"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
